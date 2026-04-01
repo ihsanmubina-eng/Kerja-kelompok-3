@@ -7,53 +7,8 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
+
     background: #32c4cd;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    border-radius: 5px;
-
-}
-
-.hero p {
-    max-width: 500px;
-    margin: 20px auto;
-    line-height: 1.8;
-    color: #595959;
-    background-color: white;
-    padding: 20px;
-    text-align: justify;
-    border-radius: 50px;
-    border: 2px solid black;
-
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0 20px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.hero a {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-.hero a:hover {
-    background-color: white;
-    color: black;
-    transition: 0.3s;
 }
 
 #navbar {
@@ -62,6 +17,9 @@ input {
     justify-content: space-between;
     padding: 10px 20px;
     box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
 }
 
 .logo {
@@ -108,6 +66,44 @@ nav ul li:hover {
 
 }
 
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 5px;
+
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #595959;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 50px;
+    border: 2px solid black;
+
+}
+
+
+
+.hero a {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
 section#AyoMulai {
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -120,6 +116,10 @@ section#AyoMulai {
 
 input {
     width: 95%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
 .submit {
@@ -137,7 +137,6 @@ input {
     border-radius: 10px;
     margin: 40px auto;
     max-width: 90%;
-    overflow-x: auto;
 }
 
 table {
@@ -164,9 +163,7 @@ td {
 }
 
 
-tbody tr:hover {
-    background-color: #f1f1f1;
-}
+
 
 .Selesai  {
     background-color: lightgreen;
