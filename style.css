@@ -1,13 +1,7 @@
-.gambar {
-    height: 56px;
-    width: auto;
-    object-fit: contain;
-    display: block;
-}
+
 
 
 body {
-
     background: #32c4cd;
 }
 
@@ -22,12 +16,12 @@ body {
     top: 0;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #32c4cd;
-    text-decoration: none;
-    align-items: end;
+
+.gambar {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
 
 .nav-links {
