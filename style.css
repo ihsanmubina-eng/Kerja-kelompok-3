@@ -1,0 +1,265 @@
+.gambar {
+    height: 56px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #32c4cd;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 5px;
+
+}
+
+.hero p {
+    max-width: 500px;
+    margin: 20px auto;
+    line-height: 1.8;
+    color: #595959;
+    background-color: white;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 50px;
+    border: 2px solid black;
+
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.hero a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+#navbar {
+    background: linear-gradient(to right, #d6dbe2, #32c4cd);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #32c4cd;
+    text-decoration: none;
+    align-items: end;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-right: end;
+
+
+}
+
+.nav-links li a {
+    color: #2ab6be;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 8px 16px;
+}
+                                                                                       
+nav ul li:hover {
+    padding: 1px;
+    color: #6aed94;
+    border-radius: 2px;
+
+}
+
+.nav-links li a:hover {
+    background-color: lightblue;
+    transition: 0.2s ease-in-out;
+    border-bottom: 2px solid #333;
+    color: black;
+
+}
+
+section#AyoMulai {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+input {
+    width: 95%;
+}
+
+.submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.tabel-pasien {
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 16px;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 2px solid #ddd;
+}
+
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-align: center;
+}
+
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.Selesai  {
+    background-color: lightgreen;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.Edit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+/* Style untuk developer */
+
+
+.card {
+    background-color: rgb(236, 236, 236);
+    height: 270px;
+    width: 160px;
+	border: 1px solid gray;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	margin: 5px;
+	text-align: center;
+	border-radius: 10px;
+
+}
+
+.card-img {
+    width: 100px;
+	height: 100px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.card-title {
+    font-size: 18px;
+    color: black;
+}
+
+.card-subtitle {
+    font-size: 12px;
+	color: gray;
+    border-bottom: 30px solid rgb(236, 236, 236);
+
+}
+
+.card-link {
+    background-color: black;
+	border-radius: 10px;
+    padding: 10px 20px;
+	color:white;
+	margin-top: 20px;
+	text-decoration: none;
+	margin-bottom: 10px;
+    
+}
+
+.card-link:hover {
+    background-color: gray;
+}
+
+.all-card {
+    gap: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.paragraf {
+    font-size: 25px;
+    margin-top: 50px;
+    justify-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 250px;
+}
