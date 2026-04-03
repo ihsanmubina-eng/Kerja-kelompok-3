@@ -1,54 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Medical Healthcare Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="page">
+        <header>
+          <nav id="navbar">
+            <div class="nav-container">
+              <img
+                class="gambar"
+                src="asset/logo-removebg-preview.png"
+                alt="Logo"
+              />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="Developer.html">Developer</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <main>
+          <section id="hero" class="hero">
+            <div class="hero-inner">
+              <div class="hero-left">
+                <h1>Your health, <br />Our priority</h1>
+                <p>
+                  Our dedicated team is committed to providing comprehensive and
+                  compassionate care, tailored to your unique needs and
+                  preferences.
+                </p>
+                <button type="button">Find a doctors</button>
+              </div>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+              <div class="hero-right">
+                <div class="hero-image">
+                  <img src="asset/klinik.jpg" alt="Tim Dokter" />
+                </div>
+              </div>
+            </div>
+          </section>
 
-<body>
+          <section id="spesialis">
+            <h2>Expertise & specializations</h2>
 
-    <nav id="navbar">
-        <img class="gambar" src="asset/logo-removebg-preview.png" alt="Logo">       
-        <ul class="nav-links">
-            <li><a href="index.html">home</a></li>
-            <li><a href="Pendaftaran.html">Pendaftaran</a></li>
-            <li><a href="Developer.html">Developer</a></li>
-        </ul>
-    </nav>
+            <div class="grid-container">
+              <article class="card">
+                <div class="card-icon">🦷</div>
+                <h3>Dental Care</h3>
+                <p>
+                  Memberikan perawatan gigi terbaik mulai dari pembersihan,
+                  penambalan, hingga perawatan estetika.
+                </p>
+                <a href="#">→</a>
+              </article>
 
-    <div id="home" class="hero">
+              <article class="card">
+                <div class="card-icon">🧠</div>
+                <h3>Neurology</h3>
+                <p>
+                  Menangani berbagai gangguan sistem saraf dengan teknologi
+                  modern dan dokter spesialis berpengalaman.
+                </p>
+                <a href="#">→</a>
+              </article>
 
-        <!-- JUDUL -->
-        <h1 class="animate__animated animate__fadeInDown" style="text-align: center;">
-            Selamat Datang
-        </h1>
+              <article class="card">
+                <div class="card-icon">❤️</div>
+                <h3>Cardiology</h3>
+                <p>
+                  Memberikan layanan kesehatan jantung secara menyeluruh, dari
+                  pemeriksaan hingga perawatan.
+                </p>
+                <a href="#">→</a>
+              </article>
 
-        <!-- PARAGRAF -->
-        <p class="animate__animated animate__fadeInUp animate__delay-1s">
-            Selamat Datang Di Rumah sakit Bina Iksan Disini Kami Menyediakan Layanan Untuk Mendaftarkan
-            Pasien Yang Sakit Dengan Cara Pelayanan Yang Cepat Dan Mudah Dengan Menggunakan Sistem Yang Kami Buat Dengan
-            Teknologi Terbaru
-            Sehingga Dapat Memudahkan Pasien Untuk Mendaftar Dan Mendapatkan Pelayanan Yang Cepat Dan Efisien
-        </p>
+              <article class="card">
+                <div class="card-icon">🍽️</div>
+                <h3>Gastroenterology</h3>
+                <p>
+                  Perawatan saluran pencernaan, diagnosis, dan manajemen
+                  penyakit gastrointestinal.
+                </p>
+                <a href="#">→</a>
+              </article>
 
-        <!-- BUTTON -->
-        <a href="Pendaftaran.html" 
-           class="animate__animated animate__zoomIn animate__delay-2s">
-           Ayo Daftar
-        </a>
+              <article class="card">
+                <div class="card-icon">🦴</div>
+                <h3>Orthopaedics</h3>
+                <p>
+                  Perawatan tulang, sendi, dan otot dengan pendekatan bedah
+                  maupun non-bedah.
+                </p>
+                <a href="#">→</a>
+              </article>
 
-    </div>
-
-    <footer id="footer">
-        <p>© 2026 Kerkom Project</p>
-    </footer>
-
-</body>
+              <article class="card">
+                <div class="card-icon">🫁</div>
+                <h3>Pulmonology</h3>
+                <p>
+                  Penanganan penyakit paru dan gangguan pernapasan dengan
+                  peralatan modern.
+                </p>
+                <a href="#">→</a>
+              </article>
+            </div>
+          </section>
+        </main>
+      </div>
+    </main>
+  </body>
 </html>

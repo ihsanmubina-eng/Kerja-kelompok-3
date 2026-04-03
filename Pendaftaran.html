@@ -1,138 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 
-<body>
-    <nav id="navbar">
-        <img class="gambar" src="asset/logo-removebg-preview.png" alt="Logo">
-        <ul class="nav-links">
-            <li><a href="index.html">home</a></li>
-            <li><a href="Pendaftaran.html">Pendaftaran</a></li>
-            <li><a href="Developer.html">Developer</a></li>
-        </ul>
-    </nav>
-    <section id="AyoMulai">
-        <center>
-            <h2> Data Pasien </h2>
-        </center>
-        <form id="Input-Data">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="page">
+        <header>
+          <nav id="navbar">
+            <div class="nav-container">
+              <img
+                class="gambar"
+                src="asset/logo-removebg-preview.png"
+                alt="Logo"
+              />
+
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Pendaftaran.html">Pendaftaran</a></li>
+                <li><a href="Developer.html">Developer</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <section id="AyoMulai">
+          <center>
+            <h2>Data Pasien</h2>
+          </center>
+          <form id="Input-Data">
             <label for="nama">Nama</label>
-            <input type="text" id="nama" name="nama" required>
-            <br>
+            <input type="text" id="nama" name="nama" required />
+            <br />
             <label for="umur">Umur</label>
-            <input type="number" id="umur" name="umur" required>
-            <br>
-            <label for="RiwayatSakit">Riwayat Sakit</label>
-            <input type="text" id="RiwayatSakit" name="RiwayatSakit" required>
-            <br>
+            <input type="number" id="umur" name="umur" required />
+            <br />
+            <label for="Alamat">Alamat</label>
+            <input type="text" id="Alamat" name="Alamat" required />
+            <br />
+            <label for="NoTelepon">No telepon </label>
+            <input type="number" id="NoTelepon" name="NoTelepon" required />
+            <br />
+            <label for="Poli">Poli</label>
+            <input type="text" id="Poli" name="Poli" required />
+            <br />
+            <label for="TanggalDaftar">Tanggal Daftar</label>
+            <input
+              type="date"
+              id="TanggalDaftar"
+              name="TanggalDaftar"
+              required
+            />
+            <br />
             <center>
-                <button class="submit" onclick="Click()">Submit</button>
+              <button class="submit" onclick="Click()">Submit</button>
             </center>
-        </form>
-    </section>
-    <div class="tabel-pasien">
-        <table>
+          </form>
+        </section>
+        <div class="tabel-pasien">
+          <table>
             <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Umur</th>
-                    <th>Riwayat Sakit</th>
-                    <th>Tombol Aksi</th>
-                </tr>
+              <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Umur</th>
+                <th>Alamat</th>
+                <th>poli</th>
+                <th>nomor telepon</th>
+                <th>tanggal daftar</th>
+                <th>Tombol Aksi</th>
+              </tr>
             </thead>
             <center>
-                <h2>Daftar Antrian </h2>
+              <h2>Daftar Antrian</h2>
             </center>
-            <tbody id="tabelPasien">
+            <tbody id="tabelPasien"></tbody>
+          </table>
+        </div>
+        <footer id="footer">
+          <p>© 2026 Kerkom Project</p>
+        </footer>
 
-            </tbody>
-        </table>
-    </div>
-    <footer id="footer">
-        <p>© 2026 Kerkom Project</p>
-    </footer>
-
-
-</body>
-<script>
-    let dataPasien = [];
-    let EditData = -1
-
-    function Click() {
-        let nama = document.getElementById("nama").value;
-        let umur = document.getElementById("umur").value;
-        let sakit = document.getElementById("RiwayatSakit").value;
-    
-
-
-        if (EditData !== -1) {
-            dataPasien[EditData] = {
-                nama: nama,
-                umur: umur,
-                sakit: sakit
-            };
-            EditData = -1;
-            document.querySelector(".submit").textContent = "Submit";
-        } else {
-            dataPasien.push({
-                nama: nama,
-                umur: umur,
-                sakit: sakit
-            });
-        }
-        TampilkanPasien();
-        document.getElementById("nama").value = "";
-        document.getElementById("umur").value = "";
-        document.getElementById("RiwayatSakit").value = "";
-    }
-
-    function EditPasien(index) {
-        const pasien = dataPasien[index];
-        document.getElementById("nama").value = pasien.nama;
-        document.getElementById("umur").value = pasien.umur;
-        document.getElementById("RiwayatSakit").value = pasien.sakit;
-        EditData = index;
-        document.querySelector(".submit").textContent = "Update";
-    }
-
-    function TampilkanPasien() {
-        const tbody = document.getElementById('tabelPasien');
-
-        tbody.innerHTML = '';
-
-        dataPasien.forEach((pasien, i) => {
-            const baris = `
-                <tr>
-                    <td>${i + 1}</td>
-                    <td>${pasien.nama}</td>
-                    <td>${pasien.umur} tahun</td>
-                    <td>${pasien.sakit}</td>
-                    <td><button class="Edit" onclick="EditPasien(${i})">Edit</button> 
-                        <button class="Selesai" onclick="HapusData(${i})" id="Selesai">Selesai</button></td>
-                </tr>`;
-
-            tbody.innerHTML += baris;
-        })
-    };
-
-
-
-
-    function HapusData(index) {
-        if(confirm("Yakin data pasien sudah selesai?")) {
-                alert("Data pasien sudah selesai!");
-                dataPasien.splice(index, 1);
-                TampilkanPasien();
-        }
-        }
-</script>
-</body>
-
+      
+      </div>
+    </main>
+  </body>
 </html>
