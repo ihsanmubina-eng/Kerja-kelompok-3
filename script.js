@@ -53,17 +53,18 @@
           }
 
           function EditPasien(index) {
+           
             const pasien = dataPasien[index];
             document.getElementById("nama").value = pasien.nama;
             document.getElementById("umur").value = pasien.umur;
             document.getElementById("Alamat").value = pasien.Alamat;
             document.getElementById("NoTelepon").value = pasien.NoTelepon;
             document.getElementById("Poli").value = pasien.poli;
-            document.getElementById("TanggalDaftar").value =
-              pasien.TanggalDaftar;
+            document.getElementById("TanggalDaftar").value = pasien.TanggalDaftar;
             document.querySelector(".submit").textContent = "Update";
             EditData = index;
-          }
+            }
+            
 
           function TampilkanPasien() {
             const tbody = document.getElementById("tabelPasien");
