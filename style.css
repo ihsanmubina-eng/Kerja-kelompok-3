@@ -31,7 +31,7 @@ body {
   justify-content: space-between;
   margin-right: 100px;
 }
-
+/* Navbar */
 #navbar {
   background: linear-gradient(to right, #e1d5c4, #c7b08f);
   display: flex;
@@ -46,22 +46,9 @@ body {
 .nav-container {
       margin: 0 auto;
     padding: 0 13%;
-
     display: flex;
     justify-content: space-between; 
     align-items: center;
-}
-
-header {
-  position: relative;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #32c4cd;
-  text-decoration: none;
-  align-items: end;
 }
 
 .nav-links {
@@ -93,6 +80,7 @@ nav ul li:hover {
 }
 
 .nav-links li a:hover {
+  border: 1px solid grey;
   background-color: rgba(255,255,255,0.18);
   transition: all 180ms ease;
   transform: translateY(-3px);
@@ -100,7 +88,7 @@ nav ul li:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.08);
   transform: translateY(-3px) scale(1.03);
 }
-
+/* Akhir Navbar */
 .cta {
   background-color: #e1d5c4;
   color: black;
@@ -111,7 +99,7 @@ nav ul li:hover {
   align-self: center;
   margin-left: 12px;
 }
-
+/* Hero */
 
 .hero {
   padding: 60px 0;
@@ -236,14 +224,24 @@ h3 {
   text-align: justify;
 }
 
-section#AyoMulai {
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 20px;
+.hero button {
+  display: inline-block;
+  background-color: #5f594f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background-color: #d3c1a8;
+  color: #1a2b4b;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 .grid-container {
@@ -288,69 +286,18 @@ section#AyoMulai {
   font-weight: 800;
 }
 
-.card a {
-  position: absolute;
-  right: 18px;
-  bottom: 16px;
-  text-decoration: none;
-  color: #1a2b4b;
-  font-weight: 700;
-  font-size: 18px;
+
+/* Pendaftaran */
+#AyoMulai {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
 }
 
-.hero button {
-  display: inline-block;
-  background-color: #5f594f;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.hero button:hover {
-  background-color: #d3c1a8;
-  color: #1a2b4b;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-}
-
-.card h3 {
-  margin: 12px 0 8px 0;
-  color: #1a2b4b;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.card p {
-  color: rgba(26,43,75,0.65);
-  font-size: 14px;
-  margin-bottom: 28px;
-  font-weight: 300;
-}
-
-.card a {
-  position: absolute;
-  right: 18px;
-  bottom: 16px;
-  text-decoration: none;
-  color: #1a2b4b;
-  font-weight: 700;
-  font-size: 18px;
-}
-
-.card-icon {
-  font-size: 22px;
-  opacity: 1;
-  color: #1a2b4b;
-  background: rgba(26,43,75,0.06);
-  padding: 8px;
-  border-radius: 10px;
-}
 
 input {
   width: 95%;
@@ -418,74 +365,75 @@ td {
   cursor: pointer;
   font-weight: bold;
 }
+/* Card-Developer */
 
-.card {
-  background-color: rgb(236, 236, 236);
-  height: 200px;
-  border: 1px solid gray;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  text-align: center;
-  border-radius: 10px;
-}
 
-.card-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-}
+    .all-card {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .card {
+        background-color: rgb(236, 236, 236);
+        height: 270px;
+        width: 160px;
+        border: 1px solid gray;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin: 5px;
+        text-align: center;
+        border-radius: 10px;
+    }
 
-.card-title {
-  font-size: 18px;
-  color: black;
-}
+    .card-img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
-.card-subtitle {
-  font-size: 12px;
-  color: gray;
-  border-bottom: 30px solid rgb(236, 236, 236);
-}
+    .card-title {
+        font-size: 18px;
+        color: black;
+    }
 
-.card-link {
-  background-color: black;
-  border-radius: 10px;
-  padding: 10px 20px;
-  color: white;
-  margin-top: 20px;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
+    .card-subtitle {
+        font-size: 12px;
+        color: gray;
+        border-bottom: 30px solid rgb(236, 236, 236);
+    }
 
-.nav-container {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 12px;
-}
+    .card-link {
+        background-color: black;
+        border-radius: 10px;
+        padding: 10px 20px;
+        color:white;
+        margin-top: 20px;
+        text-decoration: none;
+        margin-bottom: 10px;
+    }
 
-.card-link:hover {
-  background-color: gray;
-}
+    .card-link:hover {
+        background-color: gray;
+    }
 
-.all-card {
-  gap: 15px;
-  display: flex;
-  justify-content: center;
-}
+    
 
-.paragraf {
-  font-size: 25px;
-  margin-top: 50px;
-  justify-items: center;
-  font-weight: bold;
-  text-decoration: none;
-  color: rgb(236, 236, 236);
-}
+    .paragraf {
+        font-size: 25px;
+        margin-top: 50px;
+        justify-items: center;
+        font-weight: bold;
+        text-decoration: none;
+        color: rgb(236, 236, 236);
+    }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  color: white;
-  margin-top: 250px;
-}
+    /* Footer Styles */
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: white;
+        margin-top: 250px;
+    }
